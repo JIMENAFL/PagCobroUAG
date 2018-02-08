@@ -1,105 +1,105 @@
-import React, { Component, Fragment } from 'react';
-import logo from './logo.png';
-import imgMethods from "./methods_statement_cards.png";
-import imgOxxoPay from "./oxxopay.svg";
-import imgPaypal from "./paypal.svg"
-import './App.css';
+import React, { Component, Fragment } from "react";
+import logo from "./logo.png";
+import oxxopay from "./oxxopay.svg";
+import paypal from "./paypal.svg";
+import methods_statement_cards from "./methods_statement_cards.png";
+import "./App.css";
 
 class App extends Component {
   render() {
     const styles = {
       itemContainer: {
-        display: 'flex',
-        height: '50rem',
-        paddingTop: '5rem',
-        paddingLeft: '15rem',
-        paddingRight: '10rem'
+        display: "flex",
+        height: "50rem",
+        paddingTop: "5rem",
+        paddingLeft: "15rem",
+        paddingRight: "10rem"
       },
       navContainer: {
-        position: 'fixed',
-        padding: '1rem',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        height: '4rem',
-        width: '100%',
-        backgroundColor: 'white',
-        borderBottom: '1px solid rgba(0,0,0,.1)'
+        position: "fixed",
+        padding: "1rem",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        height: "4rem",
+        width: "100%",
+        backgroundColor: "white",
+        borderBottom: "1px solid rgba(0,0,0,.1)"
       },
       navLogo: {
-        height: '80%'
+        height: "80%"
       },
       navLinksContainer: {
-        display: 'flex',
-        paddingRight: '4rem'
+        display: "flex",
+        paddingRight: "4rem"
       },
       navLink: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontWeight: '300',
-        fontSize: '1.1rem',
-        wordWrap: 'break-word',
-        textDecoration: 'none',
-        color: 'inherit',
-        marginRight: '1rem'
+        fontWeight: "300",
+        fontSize: "1.1rem",
+        wordWrap: "break-word",
+        textDecoration: "none",
+        color: "inherit",
+        marginRight: "1rem"
       },
       imageContainer: {
-        display: 'flex',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        height: '100%',
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "center",
+        height: "100%",
         flexGrow: 3
       },
       imagePayContainer: {
-        display: 'flex',
-        justifyContent: 'flex-start',
-        flexFlow: 'column',
-        alignItems: 'left',
+        display: "flex",
+        justifyContent: "flex-start",
+        flexFlow: "column",
+        alignItems: "left",
         heigh: "40%",
-        padding: '0'
+        padding: "0"
       },
       imgPay: {
-        paddingTop: '1rem',
-        width: "60%"
+        paddingTop: "1rem",
+        height: "35px"
       },
       itemImage: {
-        height: '80%',
-        width: 'auto'
+        height: "80%",
+        width: "auto"
       },
       detailsContainer: {
-        paddingLeft: '6rem',
-        paddingTop: '4rem',
-        overflow: 'auto',
+        paddingLeft: "6rem",
+        paddingTop: "4rem",
+        overflow: "auto",
         flexGrow: 7
       },
       title: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontWeight: '300',
-        fontSize: '2rem',
-        wordWrap: 'break-word'
+        fontWeight: "300",
+        fontSize: "2rem",
+        wordWrap: "break-word"
       },
       subtitle: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontWeight: '400',
-        fontSize: '1.1rem',
-        wordWrap: 'break-word'
+        fontWeight: "400",
+        fontSize: "1.1rem",
+        wordWrap: "break-word"
       },
       details: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontWeight: '300',
-        fontSize: '1.1rem',
-        wordWrap: 'break-word'
+        fontWeight: "300",
+        fontSize: "1.1rem",
+        wordWrap: "break-word"
       },
       price: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontSize: '1.2rem',
-        fontWeight: '400',
-        wordWrap: 'break-word'
+        fontSize: "1.2rem",
+        fontWeight: "400",
+        wordWrap: "break-word"
       },
       shipping: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontSize: '1.3rem',
-        fontWeight: '500',
-        wordWrap: 'break-word'
+        fontSize: "1.3rem",
+        fontWeight: "500",
+        wordWrap: "break-word"
       }
     };
     return (
@@ -144,22 +144,17 @@ class App extends Component {
               in the US
             </p>
             <div style={styles.imagePayContainer}>
-            <img 
-              style={styles.imgPay}
-              src={imgMethods}
-              alt="Pago con tarjetas visa master card y american express"
-            />
-            <img
-              style={styles.imgPay}
-              src={imgOxxoPay}
-              alt="Oxxo pay"
-            />
-            <img
-              style={styles.imgPay}
-              src={imgPaypal}
-              alt="Pay pal"
-            />
-          </div>
+              <img
+                style={styles.imgPay}
+                src={methods_statement_cards}
+                alt="Pago con tarjetas visa master card y american express"
+              />
+              <img style={styles.imgPay} src={oxxopay} alt="Oxxo pay" />
+              <img style={styles.imgPay} src={paypal} alt="Pay pal" />
+            </div>
+            <div style={styles.navContainer}>
+              <img style={styles.navLogo} src={logo} alt="calithecat" />
+            </div>
           </div>
         </div>
       </Fragment>
